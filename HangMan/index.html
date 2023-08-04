@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hang Man</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Hang Man</h1>
+            <div class="qus"></div>
+        </header>
+        <div class="game">
+            <div class="display">
+                <canvas height="500" width="500"></canvas>
+            </div>
+            <div class="key-pad">
+                <div class="word"></div>
+                <div class="keys"></div>
+            </div>
+        </div>
+    </div>
+    <div class="result">
+        <div id="end">
+            <a href=""><i class="fa-solid fa-door-open"></i></a>
+            <div class="msg">you-win</div>
+            <a href=""><i class="fa-regular fa-circle-right"></i></a>
+        </div>
+    </div>
+</body>
+</html>

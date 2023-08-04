@@ -1,0 +1,129 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    height: 100vh;
+}
+.container{
+   
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+header{
+    flex: 1;
+    font-weight: bolder;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: italic;
+    display: flex;
+    background-color: whitesmoke;   
+    justify-content: center;
+    align-items: center;
+}
+h1{
+    font-size: 45px;
+    flex: 1;
+    text-align: center;
+    color:#322653;
+    padding: 0 .5em;
+    box-sizing: border-box;
+    text-decoration: underline;
+}
+.qus{
+    flex:1;
+}
+.qus h1{
+    text-align: center;
+    box-sizing: border-box;
+    color: red;
+    text-decoration: none;
+}
+.game{
+    flex: 5;
+    display: flex;
+}
+.key-pad{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.keys{
+    flex: 4;
+    width: 100%;
+    display: grid;
+    grid-template-columns:repeat(6,1fr);
+    row-gap: 1em;
+}
+.keys button{
+    border: none;
+    box-sizing: border-box;
+    padding: 1em;
+    font-size: 20px;
+    font-weight: bolder;
+    font-family: 'Courier New', Courier, monospace;
+    width: 80%;
+    height: 10vh;
+    border-radius: 10px;
+    background: #ACFADF;
+    color: #4b3bc2;
+}
+.word{
+    flex: 1;
+    text-align: center;
+    padding-top:.5em;
+    display: flex;
+    justify-content: center;
+}
+.display{
+    width: 100%;
+    box-sizing: border-box;
+}
+p{
+    display: flex;
+    align-items: center;
+    border: 3px solid #6527BE;
+    text-transform: capitalize;
+    margin:20px 10px;
+    border-radius: 10px;
+    font-size: 2em;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+    padding:0 10px;
+}
+#end{
+    display: flex;
+    width: 60%;
+    height: 200px;
+    position: absolute;
+    top: 35%;
+    margin-left: 16em;
+    border-radius: 15px;
+    background-color: #F6F4EB;
+    border: 5px solid #551a8b;
+}
+#end .msg{
+    flex: 2;
+    /* background-color: #35A29F; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4em;  
+    font-family: fantasy;
+    color: #4682A9;
+}
+#end a{
+    /* border: 1px solid white; */
+    flex:1;
+    font-size: 5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#end a:hover{
+    font-size: 6em;
+    transition: font-size .3s;
+}
+.result{
+    display: none;
+}
